@@ -3,9 +3,9 @@ from flask import Flask
 from flask_bootstrap import Bootstrap
 
 bootstrap = Bootstrap()
-db = SQLAlchemy
+db = SQLAlchemy()
 
-def create_app(config_name):
+def create_app(app):
     app = Flask(__name__)
     
     # Initializing flask extensions
