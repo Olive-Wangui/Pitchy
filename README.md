@@ -7,11 +7,6 @@
 ## DESCRIPTION
 This is a Python-Flask Application that allows users to create one minute pitch. You only have 60 seconds to impress someone. 1 minute can make or break you. The users will submit their one minute pitches and other users will vote on them and leave comments to give their feedback on them.
 
-## BDD(BEHAVIOUR DRIVEN DEVELOPMENT)
-x-special/nautilus-clipboard
-copy
-file:///home/olive/Desktop/moringa-school-projects/core/pitchy/img.png
-
 #### Login Inputs
 | Inputs     |       Description  |
 |------------|--------------------|
