@@ -1,4 +1,3 @@
-from enum import unique
 from flask_sqlalchemy import SQLAlchemy
 from app import db, login_manager
 from werkzeug.security import generate_password_hash, check_password_hash
