@@ -4,8 +4,11 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import UserMixin, current_user
 from . import login_manager
 from datetime import datetime
+from flask import Flask
 
 db = SQLAlchemy()
+app = Flask(__name__)
+db.init_app(app)
 
 class User(UserMixin, db.Model):
     __tablename__ = 'users'
