@@ -1,14 +1,12 @@
 import os
-from sqlalchemy.orm import sessionmaker, scoped_session
-from sqlalchemy import create_engine
-engine = create_engine('postgresql+psycopg2://olive:behanna2@localhost/pitchy')
-db = scoped_session(sessionmaker(bind=engine))
 
 
 class Config:
     DEBUG = True
     SECRET_KEY = os.environ.get('SECRET_KEY')
     SQLALCHEMY_DATABASE_URI = os.environ.get('postgresql+psycopg2://olive:behanna2@localhost/pitch')
+    
+    'SQLALCHEMY_TRACK_MODIFICATIONS', True
     
     #  email configurations
     SERVER = 'smtp.gmail.com'
